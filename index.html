@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Sum</title>
+</head>
+<body>
+    <h2>Simple Sum Calculator</h2>
+
+    <input id="a" type="number" placeholder="Enter number 1">
+    <input id="b" type="number" placeholder="Enter number 2">
+    <button id="addBtn">Add</button>
+
+    <p>Result: <span id="res">0</span></p>
+
+    <script>
+        document.getElementById("addBtn").onclick = function () {
+            const a = parseInt(document.getElementById("a").value);
+            const b = parseInt(document.getElementById("b").value);
+            document.getElementById("res").textContent = a + b;
+        };
+    </script>
+</body>
+</html>
